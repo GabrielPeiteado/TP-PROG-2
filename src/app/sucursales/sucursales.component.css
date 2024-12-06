@@ -1,0 +1,53 @@
+body {
+    background-color: #f0f4c3;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #3e2723;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.sucursales-container {
+    display: block;
+    gap: 30px;
+    padding: 30px;
+}
+
+.sucursal-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sucursal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    color: #424242;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #388e3c;
+}

@@ -1,0 +1,17 @@
+<div class="grafico-container">
+  <h1>Gráfico de Ventas</h1>
+  <div>
+    <button (click)="mostrarGrafico('line')">Gráfico de Líneas</button>
+    <button (click)="mostrarGrafico('bar')">Gráfico de Barras</button>
+    <button (click)="mostrarGrafico('barStacked')">Gráfico de Barras Apiladas</button>
+  </div>
+  <canvas *ngIf="chartData.datasets && chartData.datasets.length > 0" 
+    baseChart 
+    [data]="chartData" 
+    [options]="chartOptions" 
+    [type]="chartType">
+  </canvas>
+</div>
+  
+  
+

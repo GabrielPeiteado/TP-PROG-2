@@ -1,0 +1,22 @@
+<h2>Ventas por Sucursal</h2>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th class="header-cell">Mes</th>
+                <th *ngFor="let sucursal of sucursales" class="header-cell">
+                    {{ sucursal }}
+                    <button *ngIf="userRole === 'admin'" (click)="eliminarSucursal(sucursal)">Eliminar</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mes of meses">
+                <td class="header-cell">{{ mes }}</td>
+                <td *ngFor="let sucursal of sucursales">
+                    {{ obtenerMonto(mes, sucursal) | currency:'USD':'symbol':'1.2-2' }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

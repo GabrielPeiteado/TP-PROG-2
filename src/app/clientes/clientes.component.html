@@ -1,0 +1,10 @@
+<h2>Lista de Clientes</h2>
+<div class="clientes-container">
+    <ul>
+        <li *ngFor="let cliente of clientes">
+            <h3>{{ cliente.nombre }}</h3>
+            <p>{{ cliente.descripcion }}</p>
+        </li>
+    </ul>
+</div>
+<app-back-button></app-back-button>

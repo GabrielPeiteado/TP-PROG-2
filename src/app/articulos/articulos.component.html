@@ -1,0 +1,7 @@
+<h2>Lista de Artículos</h2>
+<div class="articulos-container">
+    <div class="articulo-card" *ngFor="let articulo of articulos">
+        <h3>{{ articulo.descripcion }}</h3>
+        <p class="articulo-precio">Precio: {{ articulo.precio | currency:'USD':'symbol':'1.2-2' }}</p>
+    </div>
+</div>

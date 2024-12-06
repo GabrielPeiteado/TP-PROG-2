@@ -1,0 +1,8 @@
+<h2>Lista de Sucursales</h2>
+<ul class="sucursales-container">
+    <li *ngFor="let sucursal of sucursales" class="sucursal-card">
+        <h3>{{ sucursal.nombre_suc }}</h3>
+        <p>Dirección: {{ sucursal.dir_suc }}</p>
+        <p>Número de empleados: {{ sucursal.cant_emp_suc }}</p>
+    </li>
+</ul>
